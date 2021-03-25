@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.5">
+  <world name="default">
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="box_0">
+      <include>
+        <uri>model://box010409</uri>
+        <pose>0 0.0 0  0 0 0</pose>
+      </include>
+      <plugin name="box_0" filename="libInitialVelocityPlugin.so">
+        <linear>-2.0 2.0 8.0</linear>
+        <angular>0.1 5.0 0.1</angular>
+      </plugin>
+    </model>
+
+    <model name="box_1">
+      <include>
+        <uri>model://box010409</uri>
+        <pose>0 1.8 0  0 0 0</pose>
+      </include>
+      <plugin name="box_1" filename="libInitialVelocityPlugin.so">
+        <linear>-2.0 2.0 8.0</linear>
+        <angular>0.1 5.0 0.1</angular>
+      </plugin>
+    </model>
+
+    <model name="box_2">
+      <include>
+        <uri>model://box010409</uri>
+        <pose>0 3.6 0  0 0 0</pose>
+      </include>
+      <plugin name="box_2" filename="libInitialVelocityPlugin.so">
+        <linear>-2.0 2.0 8.0</linear>
+        <angular>0.1 5.0 0.1</angular>
+      </plugin>
+    </model>
+
+    <model name="box_3">
+      <include>
+        <uri>model://box010409</uri>
+        <pose>0 5.4 0  0 0 0</pose>
+      </include>
+      <plugin name="box_3" filename="libInitialVelocityPlugin.so">
+        <linear>-2.0 2.0 8.0</linear>
+        <angular>0.1 5.0 0.1</angular>
+      </plugin>
+    </model>
+
+    <model name="box_4">
+      <include>
+        <uri>model://box010409</uri>
+        <pose>0 7.2 0  0 0 0</pose>
+      </include>
+      <plugin name="box_4" filename="libInitialVelocityPlugin.so">
+        <linear>-2.0 2.0 8.0</linear>
+        <angular>0.1 5.0 0.1</angular>
+      </plugin>
+    </model>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>8.5 5.5 0.3  0 0 3.14159</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>

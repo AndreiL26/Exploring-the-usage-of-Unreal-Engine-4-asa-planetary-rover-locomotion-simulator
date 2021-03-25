@@ -1,0 +1,6 @@
+<launch>
+	<include file="$(find_gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find benchmark)/worlds/boxes_5_simple.world"/>
+		<arg name="debug" value="true"/>
+	</include>
+</launch>

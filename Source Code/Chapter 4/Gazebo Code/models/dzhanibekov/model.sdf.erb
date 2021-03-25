@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<%
+  # Model illustrating the Dzhanibekov effect
+  # Using dimensions from simbody
+  # SI units (length in meters)
+  require "matrix"
+  def a_to_s(v)
+    Array(v).join(" ")
+  end
+
+  # Box
+  dx   = 0.04
+  dy   = 0.08
+  dz   = 0.60
+  box = {}
+  box[:mass] = 2
+  box[:ixx]  = box[:mass]/12.0 * (dy**2 + dz**2)
+  box[:iyy]  = box[:mass]/12.0 * (dz**2 + dx**2)
+  box[:izz]  = box[:mass]/12.0 * (dx**2 + dy**2)
+  boxOffset = Vector[dx/2, 0, 0]
+
+  # Cylinder along X axis
+  radius = 0.02
+  length = 0.10
+  cylinder = {}
+  cylinder[:mass] = 1
+  cylinder[:ixx] = cylinder[:mass]/2.0 * radius**2
+  cylinder[:iyy] = cylinder[:mass]/12.0 * (length**2 + 3*radius**2)
+  cylinder[:izz] = cylinder[:iyy]
+  cylinderOffset = Vector[-length/2, 0, 0]
+  cylinderRPY = Vector[0, Math::PI/2, 0]
+
+  # Lumped inertia
+  mass = box[:mass] + cylinder[:mass]
+  ixx = box[:ixx] + cylinder[:ixx]
+  iyy = box[:iyy] + cylinder[:iyy]
+  izz = box[:izz] + cylinder[:izz]
+  ixy = 0
+  ixz = 0
+  iyz = 0
+  centerOfMass = box[:mass] * boxOffset / mass
+  centerOfMass += cylinder[:mass] * cylinderOffset / mass
+  centerOfMassToBox = boxOffset - centerOfMass
+  ixx += box[:mass] * (centerOfMassToBox[1]**2 + centerOfMassToBox[2]**2)
+  iyy += box[:mass] * (centerOfMassToBox[2]**2 + centerOfMassToBox[0]**2)
+  izz += box[:mass] * (centerOfMassToBox[0]**2 + centerOfMassToBox[1]**2)
+  ixy -= box[:mass] * centerOfMassToBox[0]*centerOfMassToBox[1]
+  ixz -= box[:mass] * centerOfMassToBox[0]*centerOfMassToBox[2]
+  iyz -= box[:mass] * centerOfMassToBox[1]*centerOfMassToBox[2]
+  centerOfMassToCylinder = cylinderOffset - centerOfMass
+  ixx += cylinder[:mass] * (centerOfMassToCylinder[1]**2 + centerOfMassToCylinder[2]**2)
+  iyy += cylinder[:mass] * (centerOfMassToCylinder[2]**2 + centerOfMassToCylinder[0]**2)
+  izz += cylinder[:mass] * (centerOfMassToCylinder[0]**2 + centerOfMassToCylinder[1]**2)
+  ixy -= cylinder[:mass] * centerOfMassToCylinder[0]*centerOfMassToCylinder[1]
+  ixz -= cylinder[:mass] * centerOfMassToCylinder[0]*centerOfMassToCylinder[2]
+  iyz -= cylinder[:mass] * centerOfMassToCylinder[1]*centerOfMassToCylinder[2]
+%>
+<sdf version="1.5">
+  <model name="dzhanibekov">
+    <link name="link">
+      <inertial>
+        <pose><%= a_to_s(centerOfMass) %>  0 0 0</pose>
+        <mass><%= mass %></mass>
+        <inertia>
+          <ixx><%= ixx %></ixx>
+          <iyy><%= iyy %></iyy>
+          <izz><%= izz %></izz>
+          <ixy><%= ixy %></ixy>
+          <ixz><%= ixz %></ixz>
+          <iyz><%= iyz %></iyz>
+        </inertia>
+      </inertial>
+      <collision name="boxCollision">
+        <pose><%= a_to_s(boxOffset) %>  0 0 0</pose>
+        <geometry>
+          <box>
+            <size><%= dx %> <%= dy %> <%= dz %></size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="boxVisual">
+        <pose><%= a_to_s(boxOffset) %>  0 0 0</pose>
+        <geometry>
+          <box>
+            <size><%= dx %> <%= dy %> <%= dz %></size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="cylinderCollision">
+        <pose><%= a_to_s(cylinderOffset) %>  <%= a_to_s(cylinderRPY) %></pose>
+        <geometry>
+          <cylinder>
+            <radius><%= radius %></radius>
+            <length><%= length %></length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="cylinderVisual">
+        <pose><%= a_to_s(cylinderOffset) %>  <%= a_to_s(cylinderRPY) %></pose>
+        <geometry>
+          <cylinder>
+            <radius><%= radius %></radius>
+            <length><%= length %></length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

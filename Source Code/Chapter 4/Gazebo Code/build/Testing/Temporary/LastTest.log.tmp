@@ -1,0 +1,636 @@
+Start testing: Feb 06 17:28 EET
+----------------------------------------------------------
+1/9 Testing: BENCHMARK_boxes_dt
+1/9 Test: BENCHMARK_boxes_dt
+Command: "/home/andrei/benchmark/build/BENCHMARK_boxes_dt" "--gtest_output=xml:/home/andrei/benchmark/build/test_results/BENCHMARK_boxes_dt.xml"
+Directory: /home/andrei/benchmark/build
+"BENCHMARK_boxes_dt" start time: Feb 06 17:28 EET
+Output:
+----------------------------------------------------------
+[==========] Running 54 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 27 tests from EnginesDtSimple/BoxesTest
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/0
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/0 (1422 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/1
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/1 (1449 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/2
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/2 (1513 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/3
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/3 (1362 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/4
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/4 (1388 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/5
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/5 (1332 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/6
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/6 (1362 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/7
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/7 (1351 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/8
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/8 (1317 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/9
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/9 (1380 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/10
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.7[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/10 (969 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/11
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/11 (1362 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/12
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.7[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/12 (926 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/13
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/13 (1321 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/14
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/14 (1288 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/15
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/15 (1287 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/16
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/16 (1395 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/17
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/17 (1366 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/18
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/18 (1444 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/19
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/19 (1546 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/20
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/20 (1536 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/21
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/21 (1542 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/22
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/22 (1396 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/23
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/23 (1343 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/24
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/24 (1434 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/25
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/25 (1416 ms)
+[ RUN      ] EnginesDtSimple/BoxesTest.Boxes/26
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m0[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtSimple/BoxesTest.Boxes/26 (1282 ms)
+[----------] 27 tests from EnginesDtSimple/BoxesTest (36731 ms total)
+
+[----------] 27 tests from EnginesDtComplex/BoxesTest
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/0
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/0 (1554 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/1
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/1 (1584 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/2
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/2 (1597 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/3
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/3 (1607 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/4
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/4 (1133 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/5
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/5 (1147 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/6
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/6 (1536 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/7
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/7 (1571 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/8
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mode[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/8 (1555 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/9
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/9 (1617 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/10
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/10 (1332 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/11
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/11 (1556 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/12
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/12 (1537 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/13
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/13 (1526 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/14
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/14 (1454 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/15
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/15 (1582 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/16
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/16 (1547 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/17
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36mbullet[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/17 (1541 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/18
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.01282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/18 (1610 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/19
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.01782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/19 (1551 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/20
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.02282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/20 (1559 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/21
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.02782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[1;31m[Err] [Connection.hh:210] [0m[1;31mAsyncRead on a closed socket
+[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/21 (1557 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/22
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.03282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.2[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/22 (1596 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/23
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.03782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/23 (1422 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/24
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.04282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m1.1[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/24 (1518 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/25
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.04782[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/25 (1331 ms)
+[ RUN      ] EnginesDtComplex/BoxesTest.Boxes/26
+[1;36m[Dbg] [boxes.cc:290] [0m[1;36msimbody[0m[1;36m, dt: [0m[1;36m0.05282[0m[1;36m, modelCount: [0m[1;36m1[0m[1;36m, collision: [0m[1;36m1[0m[1;36m, isComplex: [0m[1;36m1[0m[1;36m
+[0m[1;36m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.1.241[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/usr/share/gazebo-9/worlds/blank.world[0m[1;32m][0m[1;32m
+[0m[1;32m[0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[0m[1;36m[Dbg] [ServerFixture.cc:211] [0m[1;36mServerFixture load in [0m[1;36m0.9[0m[1;36m seconds, timeout after [0m[1;36m600[0m[1;36m seconds
+[0m[1;33m[Wrn] [Publisher.cc:185] [0m[1;33mQueue limit reached for topic [0m[1;33m/gazebo/default/pose/local/info[0m[1;33m, deleting message. [0m[1;33mThis warning is printed only once.[0m[1;33m
+[0m[1;33m[0m[1;36m[Dbg] [ServerFixture.cc:130] [0m[1;36mServerFixture::Unload[0m[1;36m
+[0m[1;36m[0m[       OK ] EnginesDtComplex/BoxesTest.Boxes/26 (1334 ms)
+[----------] 27 tests from EnginesDtComplex/BoxesTest (40454 ms total)
+
+[----------] Global test environment tear-down
+[==========] 54 tests from 2 test cases ran. (77185 ms total)
+[  PASSED  ] 54 tests.
+[1;33m[0m[1;36m[0m[1;31m[0m[1;32m[0m
+<end of output>
+Test time =  77.76 sec
+----------------------------------------------------------
+Test Passed.
+"BENCHMARK_boxes_dt" end time: Feb 06 17:29 EET
+"BENCHMARK_boxes_dt" time elapsed: 00:01:17
+----------------------------------------------------------
+
+2/9 Testing: check_BENCHMARK_boxes_dt
+2/9 Test: check_BENCHMARK_boxes_dt
+Command: "/home/andrei/benchmark/tools/check_test_ran.py" "/home/andrei/benchmark/build/test_results/BENCHMARK_boxes_dt.xml"
+Directory: /home/andrei/benchmark/build
+"check_BENCHMARK_boxes_dt" start time: Feb 06 17:29 EET
+Output:
+----------------------------------------------------------
+Checking for test results in /home/andrei/benchmark/build/test_results/BENCHMARK_boxes_dt.xml
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"check_BENCHMARK_boxes_dt" end time: Feb 06 17:29 EET
+"check_BENCHMARK_boxes_dt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/9 Testing: csv_BENCHMARK_boxes_dt
+3/9 Test: csv_BENCHMARK_boxes_dt
+Command: "/home/andrei/benchmark/tools/junit_to_csv.rb" "/home/andrei/benchmark/build/test_results/BENCHMARK_boxes_dt.xml" "/home/andrei/benchmark/test_results/BENCHMARK_boxes_dt"
+Directory: /home/andrei/benchmark/build
+"csv_BENCHMARK_boxes_dt" start time: Feb 06 17:29 EET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"csv_BENCHMARK_boxes_dt" end time: Feb 06 17:29 EET
+"csv_BENCHMARK_boxes_dt" time elapsed: 00:00:00
+----------------------------------------------------------
+

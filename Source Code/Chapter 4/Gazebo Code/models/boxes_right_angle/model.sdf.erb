@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<%
+  # Two boxes at right angles
+  # lumped body has off-diagonal inertia
+  # SI units (length in meters)
+  require "matrix"
+  def a_to_s(v)
+    Array(v).join(" ")
+  end
+
+  # Box dimensions
+  t = 0.02
+  L = 0.20
+
+  def box_inertia(dx, dy, dz)
+    density = 600
+    box = {}
+    box[:size]   = Vector[dx, dy, dz]
+    box[:volume] = dx * dy * dz
+    box[:mass] = density * box[:volume]
+    box[:ixx]  = box[:mass]/12.0 * (dy**2 + dz**2)
+    box[:iyy]  = box[:mass]/12.0 * (dz**2 + dx**2)
+    box[:izz]  = box[:mass]/12.0 * (dx**2 + dy**2)
+    box
+  end
+  boxes = {}
+
+  # box O: at origin
+  boxes["O"] = box_inertia(t, t, t)
+  boxes["O"][:offset] = Vector[0, 0, 0]
+
+  # box X: aligned with X axis
+  boxes["X"] = box_inertia(L, t, t)
+  boxes["X"][:offset] = Vector[(L+t)/2, 0, 0]
+
+  # # box OX: merge of boxes O and X
+  # boxes["OX"] = box_inertia(L+t, t, t)
+  # boxes["OX"][:offset] = Vector[L/2, 0, 0]
+
+  # box Y: aligned with Y axis
+  boxes["Y"] = box_inertia(t, L, t)
+  boxes["Y"][:offset] = Vector[0, (L+t)/2, 0]
+
+  # # box Z: aligned with Y axis
+  # boxes["Z"] = box_inertia(t, t, L)
+  # boxes["Z"][:offset] = Vector[0, 0, (L+t)/2]
+
+  # Lumped inertia
+  mass = boxes.map {|i| i[1][:mass]}.reduce(0, &:+)
+  ixx = boxes.map {|i| i[1][:ixx]}.reduce(0, &:+)
+  iyy = boxes.map {|i| i[1][:iyy]}.reduce(0, &:+)
+  izz = boxes.map {|i| i[1][:izz]}.reduce(0, &:+)
+  ixy = 0
+  ixz = 0
+  iyz = 0
+  centerOfMass = boxes.map {|i| i[1][:mass] * i[1][:offset] / mass }.reduce(Vector[0, 0, 0], &:+)
+  boxes.keys.each do |k|
+    boxes[k][:centerOfMassToBox] = boxes[k][:offset] - centerOfMass
+  end
+  ixx += boxes.map {|i| i[1][:mass] * (i[1][:centerOfMassToBox][1]**2 + i[1][:centerOfMassToBox][2]**2) }.reduce(0, &:+)
+  iyy += boxes.map {|i| i[1][:mass] * (i[1][:centerOfMassToBox][2]**2 + i[1][:centerOfMassToBox][0]**2) }.reduce(0, &:+)
+  izz += boxes.map {|i| i[1][:mass] * (i[1][:centerOfMassToBox][0]**2 + i[1][:centerOfMassToBox][1]**2) }.reduce(0, &:+)
+  ixy -= boxes.map {|i| i[1][:mass] * i[1][:centerOfMassToBox][0]*i[1][:centerOfMassToBox][1] }.reduce(0, &:+)
+  ixz -= boxes.map {|i| i[1][:mass] * i[1][:centerOfMassToBox][0]*i[1][:centerOfMassToBox][2] }.reduce(0, &:+)
+  iyz -= boxes.map {|i| i[1][:mass] * i[1][:centerOfMassToBox][1]*i[1][:centerOfMassToBox][2] }.reduce(0, &:+)
+%>
+<sdf version="1.5">
+  <model name="boxes_right_angle">
+    <link name="link">
+      <inertial>
+        <pose><%= a_to_s(centerOfMass) %>  0 0 0</pose>
+        <mass><%= mass %></mass>
+        <inertia>
+          <ixx><%= ixx %></ixx>
+          <iyy><%= iyy %></iyy>
+          <izz><%= izz %></izz>
+          <ixy><%= ixy %></ixy>
+          <ixz><%= ixz %></ixz>
+          <iyz><%= iyz %></iyz>
+        </inertia>
+      </inertial>
+<%
+  boxes.keys.each do |k|
+    box = boxes[k]
+%>
+      <collision name="box<%= k %>Collision">
+        <pose><%= a_to_s(box[:offset]) %>  0 0 0</pose>
+        <geometry>
+          <box>
+            <size><%= a_to_s(box[:size]) %></size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="box<%= k %>Visual">
+        <pose><%= a_to_s(box[:offset]) %>  0 0 0</pose>
+        <geometry>
+          <box>
+            <size><%= a_to_s(box[:size]) %></size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+<%
+  end
+%>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,86 @@
+<!--
+    Copyright [2021] [Andrei Lazar]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+    <physics type='ode'>
+      <!-- Note that the default Gazebo frame duration is 0.001, but the new value comes from the UE4 sub-stepping frame duration -->
+      <max_step_size>0.001224</max_step_size>
+      <ode>
+        <solver>
+          <!-- Note that the default solver is quick, but world is more accurate, removing the unexpected behaviour noticed during the experiments -->
+          <type>world</type>
+        </solver> 
+      </ode>
+    </physics>
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Using a sun as a source of light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Model used to represent the Cube object that force is being applied to -->
+    <model name="box">
+      <!-- Note that the box is placed to sit on the ground plane, that is why the 0.5 displacement is needed -->
+      <pose>0 0 0.5 0 0 0</pose>
+      <link name="base_link">
+        <inertial>
+          <inertia>
+            <!-- The inertia matrix is computed based on the a cube with a mass of 1kg -->
+            <ixx> 1666.666382</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1666.666382</iyy>
+            <iyz>0</iyz>
+            <izz>1666.666382</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <!-- Note that the size of the box is 1x1x1 meters -->
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+          </friction>
+          </surface>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <plugin name="force_pattern" filename="libforce_pattern.so"/>
+    </model>        
+  </world>
+</sdf>

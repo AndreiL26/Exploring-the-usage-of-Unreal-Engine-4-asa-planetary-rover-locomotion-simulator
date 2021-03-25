@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{80784F3B-4CFA-C3BB-105A-CF95B0C231DF}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "PhysicsExperiments",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}

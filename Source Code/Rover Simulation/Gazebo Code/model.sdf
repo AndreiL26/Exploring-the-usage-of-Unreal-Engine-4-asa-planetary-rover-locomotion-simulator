@@ -1,0 +1,266 @@
+<!--
+    Copyright [2021] [Andrei Lazar]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="basic_rover">
+  	<static>false</static>
+
+  	<!-- Define the link for the 'body' of the rover -->
+  	<link name='chassis'>
+  		<pose>0 0 0.45 0 0 0 </pose>
+  		<collision name='collision_component'>
+  			<geometry>
+  				<box>
+  					<size>2 1 0.2</size>
+  				</box>
+  			</geometry>
+  		</collision>
+
+  		<visual name='visual_component'>
+  			<geometry>
+  				<box>
+  					<size>2 1 0.2</size>
+  				</box>
+  			</geometry>
+  		</visual>
+
+      <inertial>
+          <mass>10.0</mass>
+          <inertia>
+            <ixx>0.86666</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>3.36666</iyy>
+            <iyz>0</iyz>
+            <izz>4.16666</izz>
+          </inertia>
+        </inertial>
+
+  	</link>
+
+  	<!-- Define the links for the front wheels -->s
+  	  <link name="left_front_wheel">
+        <pose>0.65 0.35 0.21 0 1.5707 1.5707</pose>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+          </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.009</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.009</iyy>
+            <iyz>0</iyz>
+            <izz>0.009</izz>
+          </inertia>
+        </inertial>
+        <velocity_decay>
+          <angular>0.001</angular>
+        </velocity_decay>
+
+      </link>
+
+       <link name="right_front_wheel">
+        <pose>0.65 -0.35 0.21 0 1.5707 1.5707</pose>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+          </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.009</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.009</iyy>
+            <iyz>0</iyz>
+            <izz>0.009</izz>
+          </inertia>
+        </inertial>
+
+         <velocity_decay>
+          <angular>0.001</angular>
+        </velocity_decay>
+      </link>
+
+
+ <!-- Define the links for the back wheels -->
+ 	<link name="left_back_wheel">
+        <pose>-0.65 0.35 0.21 0 1.5707 1.5707</pose>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+          </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.009</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.009</iyy>
+            <iyz>0</iyz>
+            <izz>0.009</izz>
+          </inertia>
+        </inertial>
+
+         <velocity_decay>
+          <angular>0.001</angular>
+        </velocity_decay>
+      </link>
+
+
+       <link name="right_back_wheel">
+        <pose>-0.65 -0.35 0.21 0 1.5707 1.5707</pose>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+          </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.15</radius>
+            </sphere>
+          </geometry>
+        </visual>
+
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.009</ixx> 
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.009</iyy>
+            <iyz>0</iyz>
+            <izz>0.009</izz>
+          </inertia>
+        </inertial>
+
+         <velocity_decay>
+          <angular>0.001</angular>
+        </velocity_decay>
+      </link>
+
+    <!-- Define the joints for the front wheels -->
+    <joint type="revolute" name="left_front_wheel_hinge">
+        <pose>0 0 -0.03 0 0 0</pose>
+        <child>left_front_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+  	</joint>
+
+ 	<joint type="revolute" name="right_front_wheel_hinge">
+		<pose>0 0 0.03 0 0 0</pose>
+		<child>right_front_wheel</child>
+		<parent>chassis</parent>
+		<axis>
+		  <xyz>0 1 0</xyz>
+		</axis>
+    </joint>
+
+     <!-- Define the joints for the back wheels -->
+    <joint type="revolute" name="left_back_wheel_hinge">
+        <pose>0 0 -0.03 0 0 0</pose>
+        <child>left_back_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+  	</joint>
+
+ 	<joint type="revolute" name="right_back_wheel_hinge">
+		<pose>0 0 0.03 0 0 0</pose>
+		<child>right_back_wheel</child>
+		<parent>chassis</parent>
+		<axis>
+		  <xyz>0 1 0</xyz>
+		</axis>
+    </joint>
+  </model>
+</sdf>
